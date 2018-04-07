@@ -12,13 +12,20 @@
   },
   "dependencies": {
     "jest": "^22.4.3",
+    "lerna": "^2.10.0",
     "typescript": "^2.8.1"
   },
   "jest": {
-    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
     "transform": {
       "^.+\\.(ts|tsx)$": "./preprocessor.js"
     },
-    "testMatch": ["**/*.test.(ts|tsx|js)"]
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
   }
 }
