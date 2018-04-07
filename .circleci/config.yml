@@ -32,6 +32,8 @@ jobs:
       
       - run: ./node_modules/.bin/lerna bootstrap
 
+      - run: cd packages/core;./node_modules/.bin/webpack;cd ../..
+
       - run: yarn test
 
       # - save_cache:
