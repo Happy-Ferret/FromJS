@@ -28,7 +28,9 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install;cd packages/babel-plugin-data-flow; yarn install;
+      - run: yarn install;
+      
+      - run: lerna boostrap
 
       - run: yarn test
 
