@@ -28,7 +28,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - prepare: npm install;cd packages/babel-plugin-data-flow; yarn install;
+      - run: npm install;cd packages/babel-plugin-data-flow; yarn install;
 
       - run: yarn test
 
